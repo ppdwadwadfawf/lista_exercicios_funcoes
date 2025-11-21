@@ -8,11 +8,21 @@
     */
 
     //ENTRADA
+    let raio = parseFloat(prompt("Por favor, insira o raio do círculo:"));
 
 
-    //PROCESSAMENTO
+    //PROCESSAMENTO]
+    function calcularAreaCirculo(r) {
+        return Math.PI * r * r;
+    }
+
+    function calcularPerimetroCirculo(r) {
+        return 2 * Math.PI * r;
+    }
 
 
     //SAÍDA
+    alert(`A área do círculo é ${calcularAreaCirculo(raio)}.`);
+    alert(`O perímetro do círculo é ${calcularPerimetroCirculo(raio)}.`);
 
 </script>

@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
-
+    let numeroUsuario = parseInt(prompt("Por favor, insira um número inteiro:"));
 
     //PROCESSAMENTO
+    function calcularFatorial(n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        } else {
+            return n * calcularFatorial(n - 1);
+        }
+    }
 
 
     //SAÍDA
+        alert(`O fatorial de ${numeroUsuario} é ${calcularFatorial(numeroUsuario)}.`);
 
 </script>

@@ -7,11 +7,23 @@
     */
 
     //ENTRADA
+    let textoUsuario = prompt("Por favor, insira um texto:");
 
 
     //PROCESSAMENTO
 
-
+    function contarVogais(texto) {
+        let contador = 0;
+        let textoMinusculo = texto.toLowerCase();
+        for (let i = 0; i < textoMinusculo.length; i++) {
+            let char = textoMinusculo[i];
+            if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+                contador++;
+            }
+        }
+        return contador;
+    }
     //SAÍDA
+    alert(`A quantidade de vogais no texto é ${contarVogais(textoUsuario)}.`);
 
 </script>

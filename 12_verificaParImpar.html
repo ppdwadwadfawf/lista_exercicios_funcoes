@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
+    let numeroUsuario = parseInt(prompt("Por favor, insira um número inteiro:"));
 
 
     //PROCESSAMENTO
 
-
+    function verificarParOuImpar(n) {
+        if (n % 2 === 0) {
+            return "par";
+        } else {
+            return "ímpar";
+        }
+    }
     //SAÍDA
+    alert(`O número ${numeroUsuario} é ${verificarParOuImpar(numeroUsuario)}.`);
 
 </script>

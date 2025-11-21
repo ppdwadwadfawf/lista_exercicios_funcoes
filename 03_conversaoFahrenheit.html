@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
+    let celsius = parseFloat(prompt("Por favor, insira a temperatura em graus Celsius:"));
+
 
 
     //PROCESSAMENTO
+    function converterCelsiusParaFahrenheit(celsius) {
+        return (9 * celsius + 160) / 5;
+    }
 
 
     //SAÍDA
+    alert(`A temperatura em Fahrenheit é ${converterCelsiusParaFahrenheit(celsius)}.`);
 
 </script>

@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
+    let base = parseFloat(prompt("Por favor, insira a base do triângulo:"));
+    let altura = parseFloat(prompt("Por favor, insira a altura do triângulo:"));
 
 
     //PROCESSAMENTO
+    function calcularAreaTriangulo(b, h) {
+        return (b * h) / 2;
+    }
 
 
     //SAÍDA
+    alert(`A área do triângulo é ${calcularAreaTriangulo(base, altura)}.`);
 
 </script>
